@@ -14,9 +14,7 @@
 2. **Copy File or Folder**:
 
    - Right-click on any file in the Explorer panel and choose **Copy as Markdown** to copy that file's content.
-     ![Copy File](images/file.png)
    - Right-click on any folder to recursively copy all files within as Markdown.
-     ![Copy Folder](images/folder.png)
 
 3. **Paste the Markdown**: Once copied, paste the Markdown content wherever needed.
 

@@ -1,9 +1,18 @@
 {
-  "name": "copycode",
-  "displayName": "CopyCode",
+  "name": "copycodeasmd",
+  "displayName": "Copy Code Files as Markdown",
   "description": "Copy the code in the selected file or folder as markdown format.",
   "version": "0.0.1",
   "icon": "images/logo.png",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/cellinlab/copycode.git"
+  },
+  "author": {
+    "name": "Cellinlab",
+    "email": "cellinlab@gmail.com"
+  },
+  "publisher": "cellinlab",
   "engines": {
     "vscode": "^1.95.0"
   },
@@ -30,6 +39,8 @@
   "scripts": {
     "lint": "eslint .",
     "pretest": "pnpm run lint",
+    "package": "pnpm vsce package --no-dependencies",
+    "publish": "pnpm vsce publish --no-dependencies",
     "test": "vscode-test"
   },
   "devDependencies": {
