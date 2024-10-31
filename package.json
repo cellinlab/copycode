@@ -3,6 +3,7 @@
   "displayName": "CopyCode",
   "description": "Copy the code in the selected file or folder as markdown format.",
   "version": "0.0.1",
+  "icon": "images/logo.png",
   "engines": {
     "vscode": "^1.95.0"
   },
