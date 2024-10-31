@@ -1,65 +1,43 @@
-# copycode README
+# 🚀 Copy Code as Markdown
 
-This is the README for your extension "copycode". After writing up a brief description, we recommend including the following sections.
+**Copy Code as Markdown** is a VS Code extension that lets you quickly copy the content of a file or folder as a Markdown-formatted snippet directly to your clipboard. Perfect for documentation, code sharing, and saving project notes in Markdown!
 
-## Features
+## ✨ Features
 
-Describe specific features of your extension including screenshots of your extension in action. Image paths are relative to this README file.
+- 📄 **Copy File Content**: Right-click any file and select **Copy as Markdown** to copy its file path and content, formatted with the appropriate code block language for Markdown.
+- 📂 **Copy Folder Content**: Right-click any folder to copy all files within, recursively gathering file paths and contents into a single Markdown-formatted snippet. If the total content size exceeds 10 MB, the extension will notify you, and only part of the content will be copied.
+- 🌈 **Automatic Language Detection**: The extension detects file types to set the appropriate syntax highlighting in Markdown code blocks.
 
-For example if there is an image subfolder under your extension project workspace:
+## 🛠️ Usage
 
-\!\[feature X\]\(images/feature-x.png\)
+1. **Install the Extension**: Search for "Copy Code as Markdown" in the VS Code Extensions Marketplace and install it.
+2. **Copy File or Folder**:
 
-> Tip: Many popular extensions utilize animations. This is an excellent way to show off your extension! We recommend short, focused animations that are easy to follow.
+   - Right-click on any file in the Explorer panel and choose **Copy as Markdown** to copy that file's content.
+     ![Copy File](images/file.png)
+   - Right-click on any folder to recursively copy all files within as Markdown.
+     ![Copy Folder](images/folder.png)
 
-## Requirements
+3. **Paste the Markdown**: Once copied, paste the Markdown content wherever needed.
 
-If you have any requirements or dependencies, add a section describing those and how to install and configure them.
+## 📥 Installation
 
-## Extension Settings
+You can install this extension directly from the VS Code Marketplace by searching for "Copy Code as Markdown" or by visiting the [VS Code Extension Marketplace](https://marketplace.visualstudio.com/vscode).
 
-Include if your extension adds any VS Code settings through the `contributes.configuration` extension point.
+## 📜 Extension Commands
 
-For example:
+This extension contributes the following command:
 
-This extension contributes the following settings:
+- `extension.copyCodeAsMD`: Copies the selected file or folder content as Markdown.
 
-* `myExtension.enable`: Enable/disable this extension.
-* `myExtension.thing`: Set to `blah` to do something.
+## 👩‍💻 Development
 
-## Known Issues
+To work on this extension:
 
-Calling out known issues can help limit users opening duplicate issues against your extension.
+1. Clone the repository and open it in VS Code.
+2. Run `npm install` to install dependencies.
+3. Press `F5` to open a new VS Code window with the extension loaded.
 
-## Release Notes
+## 📄 License
 
-Users appreciate release notes as you update your extension.
-
-### 1.0.0
-
-Initial release of ...
-
-### 1.0.1
-
-Fixed issue #.
-
-### 1.1.0
-
-Added features X, Y, and Z.
-
----
-
-## Working with Markdown
-
-You can author your README using Visual Studio Code.  Here are some useful editor keyboard shortcuts:
-
-* Split the editor (`Cmd+\` on macOS or `Ctrl+\` on Windows and Linux)
-* Toggle preview (`Shift+Cmd+V` on macOS or `Shift+Ctrl+V` on Windows and Linux)
-* Press `Ctrl+Space` (Windows, Linux, macOS) to see a list of Markdown snippets
-
-## For more information
-
-* [Visual Studio Code's Markdown Support](http://code.visualstudio.com/docs/languages/markdown)
-* [Markdown Syntax Reference](https://help.github.com/articles/markdown-basics/)
-
-**Enjoy!**
+This extension is available under the MIT License.

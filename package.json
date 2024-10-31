@@ -13,9 +13,18 @@
   "main": "./extension.js",
   "contributes": {
     "commands": [{
-      "command": "copycode.helloWorld",
-      "title": "Hello World"
-    }]
+      "command": "extension.copyCodeAsMD",
+      "title": "Copy Code as Markdown"
+    }],
+    "menus": {
+      "explorer/context": [
+        {
+          "command": "extension.copyCodeAsMD",
+          "when": "resourceFilename =~ /.*$/",
+          "group": "navigation"
+        }
+      ]
+    }
   },
   "scripts": {
     "lint": "eslint .",
